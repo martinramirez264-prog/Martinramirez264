@@ -19,9 +19,9 @@ def calcular_promedio_con_clasificacion():
             if 0 <= nota <= 10:
                 notas.append(nota)
             else:
-                print("⚠️ Error: La nota debe estar entre 0 y 10. Intente de nuevo.")
+                print(" Error: La nota debe estar entre 0 y 10. Intente de nuevo.")
         except ValueError:
-            print("⚠️ Error: Entrada no válida. Por favor, ingrese un número.")
+            print(" Error: Entrada no válida. Por favor, ingrese un número.")
 
     # Una vez que se tienen las 10 notas, se calcula el promedio
     if notas:
@@ -32,9 +32,9 @@ def calcular_promedio_con_clasificacion():
         print(f"El promedio de las {num_notas} notas es: {promedio:.2f}")
 
         if promedio >= umbral_aprobacion:
-            print("🎉 ¡Felicitaciones! Ha APROBADO.")
+            print(" ¡Felicitaciones! Ha APROBADO.")
         else:
-            print("❌ Lo siento, ha DESAPROBADO.")
+            print(" Lo siento, ha DESAPROBADO.")
     else:
         print("\nNo se pudieron ingresar notas válidas. No se puede calcular el promedio.")
 
