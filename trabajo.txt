@@ -1,0 +1,35 @@
+""1) algoritmo paso a paso, 2) código Python
+listo para guardar en GitHub, 3) ejemplo de uso, 4) pasos para subirlo a un
+repo en GitHub (CLI y web), 5) prueba con pytest y 6) sugerencias de mejora.
+
+1 — Objetivo
+
+Calcular el promedio aritmético de 10 notas ingresadas por
+el usuario (validadas como números dentro de un rango configurable).
+
+2 — Algoritmo paso a paso (secuencia lógica)
+
+Definir
+cuántas notas vamos a pedir (aquí: 10).
+Inicializar
+una lista vacía notas = [].
+Repetir
+10 veces:
+
+a. Pedir al usuario la nota i (ej: Ingrese la nota #1 (0-10): ).
+
+b. Intentar convertir la entrada a float.
+
+c. Validar que esté dentro del rango permitido (por defecto 0 ≤ nota ≤
+10).
+
+d. Si es válida, agregarla a notas. Si no, mostrar error y pedir de nuevo
+la misma nota.
+Una
+vez recolectadas las 10 notas, calcular la suma y dividir por la cantidad
+(10) → promedio = sum(notas) / len(notas).
+Mostrar
+el resultado con el formato deseado (p.ej. 2 decimales).
+(Opcional)
+Guardar resultados en un archivo o mostrar una clasificación
+(aprobado/suspenso) según un umbral configurable.""
